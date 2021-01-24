@@ -12,8 +12,10 @@
 
   <body>
     <%= render "layouts/navbar" %>
-    <span class="notice"><%= notice %></span>
-    <span class="alert"><%= alert %></span>
+    <div class="container">
+      <p class="notice text-center font-weight-bold" id="notice"><%= notice %></p>
+      <p class="alert text-center font-weight-bold" id="alert"><%= alert %></p>
+    </div>
     <%= yield %>
   </body>
 </html>
