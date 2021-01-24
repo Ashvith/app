@@ -4,14 +4,14 @@ one:
   serial_no: 1
   product: MyString
   brand: MyString
-  unit_price: MyString
+  unit_price: 1.5
   quantity: 1
-  msp: 1
+  msp: 1.5
 
 two:
   serial_no: 1
   product: MyString
   brand: MyString
-  unit_price: MyString
+  unit_price: 1.5
   quantity: 1
-  msp: 1
+  msp: 1.5

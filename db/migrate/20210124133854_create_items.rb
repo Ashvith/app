@@ -4,9 +4,9 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.integer :serial_no
       t.string :product
       t.string :brand
-      t.string :unit_price
+      t.float :unit_price
       t.integer :quantity
-      t.integer :msp
+      t.float :msp
 
       t.timestamps
     end
