@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  serial_no: 1
+  product: MyString
+  brand: MyString
+  unit_price: MyString
+  quantity: 1
+  msp: 1
+
+two:
+  serial_no: 1
+  product: MyString
+  brand: MyString
+  unit_price: MyString
+  quantity: 1
+  msp: 1
