@@ -3,10 +3,11 @@ class ItemsController < ApplicationController
 
   # GET /items or /items.json
   def index
-    @items = Item.paginate(page: params[:page], per_page: 5)
+    @per_page = 3
+    @items = Item.paginate(page: params[:page], per_page: @per_page)
     @total = 0
     @count = 1
-
+    @current_page = params[:page]||1
     for x in Item.all do
       @total += x.msp
     end

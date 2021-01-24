@@ -1,32 +1,56 @@
-<!--<p>
+<!--<h5>
   <strong>Serial no:</strong>
-  <%= @item.serial_no %>
-</p>-->
+  <% #@item.serial_no %>
+</h5>-->
+<br/>
+<div class="container">
+  <div class="row">
+    <h5>
+      <strong>Product:</strong>
+      <%= @item.product %>
+    </h5>
+  </div>
 
-<p>
-  <strong>Product:</strong>
-  <%= @item.product %>
-</p>
+  <br/>
 
-<p>
-  <strong>Brand:</strong>
-  <%= @item.brand %>
-</p>
+  <div class="row">
+  <h5>
+    <strong>Brand:</strong>
+    <%= @item.brand %>
+  </h5>
+  </div>
 
-<p>
-  <strong>Unit price:</strong>
-  <%= @item.unit_price %>
-</p>
+  <br/>
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @item.quantity %>
-</p>
+  <div class="row">
+  <h5>
+    <strong>Unit price:</strong>
+    <%= @item.unit_price %>
+  </h5>
+  </div>
 
-<p>
-  <strong>Msp:</strong>
-  <%= @item.msp %>
-</p>
+  <br/>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+  <div class="row">
+  <h5>
+    <strong>Quantity:</strong>
+    <%= @item.quantity %>
+  </h5>
+  </div>
+
+  <br/>
+  
+  <div class="row">
+    <h5>
+      <strong>Msp:</strong>
+      <%= @item.msp %>
+    </h5>
+  </div>
+  
+  <br/>
+
+  <div class="row">
+    <%= link_to 'Edit', edit_item_path(@item) %> |
+    <%= link_to 'Back', items_path %>
+  </div>
+</div>
