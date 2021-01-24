@@ -13,9 +13,13 @@
   <body>
     <%= render "layouts/navbar" %>
     <div class="container">
+      <br>
+      <h6 class="text-right">Currently signed in as: <%= current_user.present? ? current_user.email : 'None' %></h6>
+    </div>
+    <%= yield %>
+    <div class="container">
       <p class="notice text-center font-weight-bold" id="notice"><%= notice %></p>
       <p class="alert text-center font-weight-bold" id="alert"><%= alert %></p>
     </div>
-    <%= yield %>
   </body>
 </html>

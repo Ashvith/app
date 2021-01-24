@@ -1,23 +1,26 @@
+<div class="container">
 <% if user_signed_in? %>
-  <table>
-    <thead>
+<h1>Users</h1>
+  <table class="table">
+    <thead class="thead-dark">
       <tr>
         <th>Serial no</th>
         <th>User ID</th>
         <th>Created at</th>
         <th>Last seen</th>
-        <th colspan="3"></th>
+        <!--<th colspan="0"></th>-->
       </tr>
     </thead>
 
     <tbody>
       <% @users.each do |user| %>
         <tr>
-          <td><%= user.id%></td>
+          <td><%= @count %></td>
           <td><%= user.email %></td>
           <td><%= user.created_at %></td>
           <td><%= user.last_sign_in_at %></td>
         </tr>
+        <% @count+=1 %>
       <% end %>
     </tbody>
   </table>
@@ -27,3 +30,4 @@
 <% else %>
     <%= render "history/landing" %>
 <% end %>
+</div>
